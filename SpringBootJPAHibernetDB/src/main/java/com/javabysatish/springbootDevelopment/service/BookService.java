@@ -3,15 +3,17 @@ package com.javabysatish.springbootDevelopment.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.javabysatish.springbootDevelopment.dao.BookRepository;
 import com.javabysatish.springbootDevelopment.entity.Book;
 
+@Component
 public class BookService {
 
 
-
-	@Autowired BookRepository bookrepository;
+	@Autowired 
+	BookRepository bookrepository;
 	public List<Book> getAllbook() {
 		
 		List<Book> list = (List)this.bookrepository.findAll();
