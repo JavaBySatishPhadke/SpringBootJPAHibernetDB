@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "270bf24c-7753-440a-8ee1-64ee48983ade",
+		"name": "BookProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/books",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/books/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/books/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/books/3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 2,\n    \"title\": \"the complete referance\",\n    \"author\": {\n        \"authorId\": 2,\n        \"firstName\": \"satish\",\n        \"lastName\": \"Phadke\",\n        \"language\": \"Hindhi\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/books/3",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"books",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/books",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 24,\n        \"title\": \"Gooogllll lang programing\",\n        \"author\": \"google author\"\n        \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/books",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/books",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1233,\n    \"title\": \"AWS book  referance\",\n    \"author\": {\n        \"authorId\": 34242,\n        \"firstName\": \"shaurya\",\n        \"lastName\": \"Phadke\",\n        \"language\": \"English\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/books",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
